@@ -3,7 +3,7 @@
     font-family: 'Poppins', sans-serif;
 }
 /* header styles */
-nav{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +26,9 @@ nav ul li a{
     color: #3A3A3A;
     font-size: 16px;
     font-weight: 600;
+}
+.nav-mobile{
+    display: none;
 }
 /* banner section styles */
 .banner{
@@ -62,6 +65,7 @@ nav ul li a{
 .banner-img{
     width: 40%;
     background-image: url(..//images/Circle\ design.svg);
+    background-repeat: no-repeat;
 }
 /* sponsor section styles */
 .sponsor{
@@ -190,5 +194,92 @@ nav ul li a{
 }
 .icon a{
     text-decoration: none;
-    color: gray;
+    color: rgb(88, 88, 88);
+}
+
+
+/* responsive styles for mobile */
+@media screen and (max-width: 668px) {
+    body, html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .nav{
+        display: none;
+    }
+    .nav-mobile{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-title{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .nav-mobile a{
+        text-decoration: none;
+        color: #3A3A3A;
+    }
+    .banner{
+        padding: 30px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .banner-title{
+        font-size: 24px;
+    }
+    .banner-content , .banner-img{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .banner-img{
+        background-size: cover;
+    }
+    .banner-img img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .sponsor{
+        padding: 40px 20px;
+    }
+    .sponsor-content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    .products{
+        padding: 30px 20px;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+        gap: 90px;
+    }
+    .bottom-content{
+        width: 100%;
+        padding: 10px;
+    }
+    .bottom-img{
+        width: 100%;
+    }
+    .foot{
+        padding: 40px 20px;
+    }
+    .icon i{
+        margin-right: 10px;
+        padding: 8px;
+    }
 }
