@@ -252,6 +252,9 @@ nav ul li a{
         gap: 20px;
         padding: 10px;
     }
+    .sponsor-content img{
+        width: 55px;
+    }
     .products{
         padding: 30px 20px;
     }
