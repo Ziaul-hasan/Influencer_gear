@@ -66,6 +66,7 @@ nav ul li a{
     width: 40%;
     background-image: url(..//images/Circle\ design.svg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 /* sponsor section styles */
 .sponsor{
@@ -76,6 +77,8 @@ nav ul li a{
     grid-template-columns: repeat(7, 1fr);
     gap: 20px;
     padding: 20px 30px;
+    border-top: 1px  solid rgb(226, 226, 226);
+    border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 /* Products section styles */
@@ -235,7 +238,7 @@ nav ul li a{
         margin: 20px 0;
     }
     .banner-img{
-        background-size: cover;
+        background-size: contain;
     }
     .banner-img img{
         margin: 0 auto;
@@ -251,6 +254,7 @@ nav ul li a{
         justify-items: center;
         gap: 20px;
         padding: 10px;
+        border: 0;
     }
     .sponsor-content img{
         width: 55px;
@@ -328,6 +332,7 @@ nav ul li a{
         justify-items: center;
         gap: 20px;
         padding: 10px;
+        border: 0;
     }
     .products{
         padding: 30px 20px;
